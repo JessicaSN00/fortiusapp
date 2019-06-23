@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/search_serviceTxt"
+        style="@style/CustomText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/search_service_txt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <EditText
+        android:id="@+id/search_clientEdit"
+        android:layout_width="226dp"
+        android:layout_height="35dp"
+        android:background="@drawable/edit_style"
+        android:drawableRight="@drawable/search"
+        android:hint="@string/client_number_hint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_serviceTxt"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <Button
+        android:id="@+id/search_serviceBttn"
+        style="@style/CustomButton"
+        android:layout_width="127dp"
+        android:layout_height="38dp"
+        android:background="@drawable/button_style"
+        android:text="@string/search_bttn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_clientEdit"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <ListView
+        style="@style/CustomText"
+        android:layout_width="337dp"
+        android:layout_height="449dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_serviceBttn"
+        app:layout_constraintVertical_bias="0.406" />
+
+</android.support.constraint.ConstraintLayout>

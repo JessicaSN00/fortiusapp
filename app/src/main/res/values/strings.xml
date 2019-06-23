@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">FortiusUI</string>
+    <string name="add_new_client_bttn">Agregar nuevo cliente</string>
+    <string name="search_client_txt">Buscar cliente</string>
+    <string name="search_bttn">Buscar</string>
+    <string name="client_name_txt">Nombre:</string>
+    <string name="client_phone_txt">Teléfono:</string>
+    <string name="client_mail_txt">E-mail:</string>
+    <string name="client_address_txt">Domicilio:</string>
+    <string name="client_services_bttn">Ver servicios</string>
+
+    <string name="new_clientName_txt">Nombre(s):</string>
+    <string name="new_clientLast_txt">Apellido Paterno:</string>
+    <string name="new_clientLastM_txt">Apellido Materno:</string>
+    <string name="new_clientPhone_txt">Teléfono:</string>
+    <string name="new_clientEmail_txt">Email:</string>
+    <string name="new_clientAddress_txt">Domicilio:</string>
+    <string name="new_client_bttn">Guardar cliente</string>
+
+    <string name="search_service_txt">Buscar servicio:</string>
+    <string name="client_number_hint">Numero de cliente</string>
+
+    <string name="menu_services_bttn">Servicios</string>
+    <string name="menu_clients_bttn">Cientes</string>
+    <string name="menu_reports_bttn">Reportes</string>
+    <string name="menu_users_bttn">Usuarios(admin)</string>
+
+    <string name="user_txt">Usuario</string>
+    <string name="pass_txt">Contraseña</string>
+    <string name="signin_bttn">Iniciar sesión</string>
+
+    <string name="new_service_type_txt">Tipo de servicio:</string>
+    <string name="new_service_phone">Cliente (# de teléfono):</string>
+    <string name="new_service_desc_txt">Descripción:</string>
+    <string name="new_service_todo">Por hacer (Extra):</string>
+    <string name="new_service_subtotal">Subtotal:</string>
+    <string name="new_service_extra">Extra:</string>
+    <string name="new_service_total">Total</string>
+    <string name="new_service_date">Fecha de entrega:</string>
+    <string name="new_service_bttn">Añadir servicio</string>
+
+</resources>

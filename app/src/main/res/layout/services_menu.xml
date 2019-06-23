@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/menu_services"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/menu_services_bttn"
+            style="@style/CustomButtons"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/button_style"
+            android:text="@string/menu_new_service_bttn" />
+
+        <Button
+            android:id="@+id/menu_clients_bttn"
+            style="@style/CustomButtons"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/button_style"
+            android:text="@string/menu_search_service_bttn"
+            android:layout_below="@id/menu_services_bttn"/>
+
+        <Button
+            android:id="@+id/menu_reports_bttn"
+            style="@style/CustomButtons"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/button_style"
+            android:text="@string/menu_history_service_bttn"
+            android:layout_below="@id/menu_clients_bttn"/>
+
+        <Button
+            android:id="@+id/menu_users_bttn"
+            style="@style/CustomButtons"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/button_style"
+            android:text="@string/menu_manage_service_bttn"
+            android:layout_below="@id/menu_reports_bttn"/>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -39,4 +39,12 @@
     <string name="new_service_date">Fecha de entrega:</string>
     <string name="new_service_bttn">Añadir servicio</string>
 
+    <string name="reports_searchfrom">Buscar servicio desde:</string>
+    <string name="reports_searchto">Hasta:</string>
+
+    <string name="menu_new_service_bttn">Nuevo Servicio</string>
+    <string name="menu_search_service_bttn">Buscar servicio</string>
+    <string name="menu_history_service_bttn">Historial de servicios terminados</string>
+    <string name="menu_manage_service_bttn">Gestionar tipos de servicios</string>
+
 </resources>

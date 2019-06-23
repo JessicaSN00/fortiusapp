@@ -48,6 +48,7 @@
         app:layout_constraintVertical_bias="0.026" />
 
     <ListView
+        android:id="@+id/search_service_list"
         style="@style/CustomText"
         android:layout_width="337dp"
         android:layout_height="449dp"

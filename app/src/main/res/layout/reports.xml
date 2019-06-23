@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/search_report_from_txt"
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/search_report_to_txt"
+            android:layout_alignParentTop="true"
+            android:text="@string/reports_searchfrom" />
+
+        <EditText
+            android:id="@+id/search_report_from"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@id/search_report_from_txt"
+            android:background="@drawable/edit_style"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/search_report_to_txt"
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="145dp"
+            android:layout_below="@id/search_report_from"
+            android:text="@string/reports_searchto" />
+
+        <EditText
+            android:id="@+id/search_to_from"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="8dp"
+            android:layout_below="@id/search_report_from"
+            android:layout_toRightOf="@id/search_report_to_txt"
+            android:background="@drawable/edit_style"
+            android:inputType="date"
+            tools:layout_editor_absoluteY="119dp" />
+
+        <Button
+            android:id="@+id/search_bttn"
+            style="@style/CustomButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_below="@id/search_to_from"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_style"
+            android:text="@string/search_bttn" />
+
+        <ListView
+            android:id="@+id/search_service_date_list"
+            style="@style/CustomText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/search_bttn"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="20dp" />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

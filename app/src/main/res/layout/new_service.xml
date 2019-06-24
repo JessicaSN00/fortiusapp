@@ -4,210 +4,189 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/menu_services"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <TextView
-        android:id="@+id/service_typeTxt"
-        style="@style/CustomText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="@string/new_service_type_txt"
-        app:layout_constraintBottom_toTopOf="@+id/spinner"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.958" />
+        <TextView
+            android:id="@+id/service_typeTxt"
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/new_service_type_txt" />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="343dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/service_phoneTxt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@id/service_typeTxt"/>
 
-    <TextView
-        android:id="@+id/service_phoneTxt"
-        style="@style/CustomText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="@string/new_service_phone"
-        app:layout_constraintBottom_toTopOf="@+id/new_service_phone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/service_phoneTxt"
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/new_service_phone"
+            android:layout_below="@id/spinner"/>
 
-    <EditText
-        android:id="@+id/new_service_phone"
-        android:layout_width="343dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/form_style"
-        android:inputType="phone"
-        app:layout_constraintBottom_toTopOf="@+id/service_descTxt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        <EditText
+            android:id="@+id/new_service_phone"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/form_style"
+            android:inputType="phone"
+            android:layout_below="@id/service_phoneTxt" />
 
-    <TextView
-        android:id="@+id/service_descTxt"
-        style="@style/CustomText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="@string/new_service_desc_txt"
-        app:layout_constraintBottom_toTopOf="@+id/new_service_desc"
-        tools:layout_editor_absoluteX="150dp" />
+        <TextView
+            android:id="@+id/service_descTxt"
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/new_service_desc_txt"
+            android:layout_below="@id/new_service_phone"/>
 
-    <EditText
-        android:id="@+id/new_service_desc"
-        android:layout_width="343dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/form_style"
-        app:layout_constraintBottom_toTopOf="@+id/service_todoTxt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        <EditText
+            android:id="@+id/new_service_desc"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/form_style"
+            android:layout_below="@id/service_descTxt"/>
 
-    <TextView
-        android:id="@+id/service_todoTxt"
-        style="@style/CustomText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/new_service_todo"
-        app:layout_constraintBottom_toTopOf="@+id/new_service_todo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/service_todoTxt"
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/new_service_todo"
+            android:layout_below="@id/new_service_desc"/>
 
-    <EditText
-        android:id="@+id/new_service_todo"
-        android:layout_width="343dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="50dp"
-        android:background="@drawable/form_style"
-        app:layout_constraintBottom_toTopOf="@+id/service_subtotalTxt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        <EditText
+            android:id="@+id/new_service_todo"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/form_style"
+            android:layout_below="@id/service_todoTxt" />
 
-    <TextView
-        android:id="@+id/service_subtotalTxt"
-        style="@style/CustomText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="@string/new_service_subtotal"
-        app:layout_constraintBottom_toTopOf="@+id/new_service_subtotal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.102"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/service_subtotalTxt"
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/new_service_subtotal"
+            android:layout_below="@id/new_service_todo"/>
 
-    <EditText
-        android:id="@+id/new_service_subtotal"
-        android:layout_width="135dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="8dp"
-        android:inputType="number"
-        android:background="@drawable/form_style"
-        app:layout_constraintBottom_toTopOf="@+id/service_dateTxt"
-        app:layout_constraintStart_toStartOf="parent" />
+        <EditText
+            android:id="@+id/new_service_subtotal"
+            android:layout_width="135dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="8dp"
+            android:inputType="number"
+            android:background="@drawable/form_style"
+            android:layout_below="@id/service_subtotalTxt"/>
 
-    <TextView
-        android:id="@+id/service_extraTxt"
-        style="@style/CustomText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="@string/new_service_extra"
-        app:layout_constraintBottom_toTopOf="@+id/new_service_extra"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.68"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/service_extraTxt"
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/new_service_extra"
+            android:layout_below="@id/new_service_subtotal"/>
 
-    <EditText
-        android:id="@+id/new_service_extra"
-        android:layout_width="135dp"
-        android:layout_height="28dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="8dp"
-        android:inputType="number"
-        android:background="@drawable/form_style"
-        app:layout_constraintBottom_toTopOf="@+id/service_totalTxt"
-        app:layout_constraintEnd_toEndOf="parent" />
+        <EditText
+            android:id="@+id/new_service_extra"
+            android:layout_width="135dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="8dp"
+            android:inputType="number"
+            android:background="@drawable/form_style"
+            android:layout_below="@id/service_extraTxt"/>
 
-    <TextView
-        android:id="@+id/service_totalTxt"
-        style="@style/CustomText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/new_service_total"
-        app:layout_constraintBottom_toTopOf="@+id/new_service_total"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.626"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/service_totalTxt"
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="110dp"
+            android:text="@string/new_service_total"
+            android:layout_below="@id/new_service_todo"
+            android:layout_toEndOf="@id/service_subtotalTxt"/>
 
-    <EditText
-        android:id="@+id/new_service_total"
-        android:layout_width="135dp"
-        android:layout_height="28dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="150dp"
-        android:inputType="number"
-        android:background="@drawable/form_style"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        <EditText
+            android:id="@+id/new_service_total"
+            android:layout_width="155dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="8dp"
+            android:inputType="number"
+            android:background="@drawable/form_style"
+            android:layout_toRightOf="@id/new_service_subtotal"
+            android:layout_below="@id/service_totalTxt"/>
 
-    <TextView
-        android:id="@+id/service_dateTxt"
-        style="@style/CustomText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="@string/new_service_date"
-        app:layout_constraintBottom_toTopOf="@+id/new_service_date"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.135"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/service_dateTxt"
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="140dp"
+            android:text="@string/new_service_date"
+            android:layout_below="@id/new_service_total"
+            android:layout_toEndOf="@id/service_extraTxt"/>
 
-    <EditText
-        android:id="@+id/new_service_date"
-        android:layout_width="165dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="150dp"
-        android:inputType="date"
-        android:background="@drawable/form_style"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        <EditText
+            android:id="@+id/new_service_date"
+            android:layout_width="155dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="60dp"
+            android:layout_toEndOf="@id/new_service_extra"
+            android:layout_below="@id/service_dateTxt"
+            android:background="@drawable/form_style"
+            android:inputType="date" />
 
-    <Button
-        android:id="@+id/new_service_bttn"
-        style="@style/CustomButton"
-        android:layout_width="153dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="64dp"
-        android:background="@drawable/button_style"
-        android:text="@string/new_service_bttn"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        <Button
+            android:id="@+id/new_service_bttn"
+            style="@style/CustomButton"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="64dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/button_style"
+            android:text="@string/new_service_bttn"
+            android:layout_below="@id/new_service_extra"/>
+    </RelativeLayout>
 
 
 </android.support.constraint.ConstraintLayout>

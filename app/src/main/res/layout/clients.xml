@@ -6,209 +6,151 @@
     android:background="#fff"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <Button
-        android:id="@+id/add_client_bttn"
-        style="@style/CustomButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/button_style"
-        android:text="@string/add_new_client_bttn"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <RelativeLayout
+        android:id="@+id/menu_services"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.965"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.058" />
+        app:layout_constraintBottom_toBottomOf="parent">
 
-    <TextView
-        android:id="@+id/search_clientTxt"
-        style="@style/CustomText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/search_client_txt"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.004"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.156" />
+        <Button
+            android:id="@+id/add_client_bttn"
+            style="@style/CustomButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_style"
+            android:text="@string/add_new_client_bttn" />
 
-    <EditText
-        android:id="@+id/search_clientEdit"
-        android:layout_width="226dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/edit_style"
-        android:drawableRight="@drawable/search"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.218"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_clientTxt"
-        app:layout_constraintVertical_bias="0.003" />
+        <TextView
+            android:id="@+id/search_clientTxt"
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/search_client_txt"
+            android:layout_below="@id/add_client_bttn"/>
 
-    <Button
-        android:id="@+id/search_bttn"
-        style="@style/CustomButton"
-        android:layout_width="127dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="472dp"
-        android:background="@drawable/button_style"
-        android:text="@string/search_bttn"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.134"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_clientEdit"
-        app:layout_constraintVertical_bias="0.368" />
+        <EditText
+            android:id="@+id/search_clientEdit"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edit_style"
+            android:drawableRight="@drawable/search"
+            android:layout_below="@id/search_clientTxt"/>
 
-    <TextView
-        android:id="@+id/client_name_txt"
-        style="@style/CustomText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:text="@string/client_name_txt"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.003"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.405" />
+        <Button
+            android:id="@+id/search_bttn"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/button_style"
+            android:text="@string/search_bttn"
+            android:layout_below="@id/search_clientEdit" />
 
-    <EditText
-        android:id="@+id/client_name_editTxt"
-        android:layout_width="190dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="8dp"
-        android:background="@drawable/edit_style"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.096"
-        app:layout_constraintStart_toEndOf="@+id/client_name_txt"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.404" />
+        <TextView
+            android:id="@+id/client_name_txt"
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="170dp"
+            android:text="@string/client_name_txt"
+            android:layout_below="@id/search_bttn"/>
 
-    <TextView
-        android:id="@+id/client_phone_txt"
-        style="@style/CustomText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/client_phone_txt"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/client_name_txt"
-        app:layout_constraintVertical_bias="0.049" />
+        <EditText
+            android:id="@+id/client_name_editTxt"
+            android:layout_width="190dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="120dp"
+            android:background="@drawable/edit_style"
+            android:layout_below="@id/client_name_txt"/>
 
-    <EditText
-        android:id="@+id/client_phone_editTxt"
-        android:layout_width="190dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:inputType="phone"
-        android:background="@drawable/edit_style"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
-        app:layout_constraintStart_toEndOf="@+id/client_phone_txt"
-        app:layout_constraintTop_toBottomOf="@+id/client_name_editTxt"
-        app:layout_constraintVertical_bias="0.039" />
+        <TextView
+            android:id="@+id/client_phone_txt"
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/client_phone_txt"
+            android:layout_below="@id/client_name_editTxt"/>
 
-    <TextView
-        android:id="@+id/client_mail_txt"
-        style="@style/CustomText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/client_mail_txt"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/client_phone_txt"
-        app:layout_constraintVertical_bias="0.049" />
+        <EditText
+            android:id="@+id/client_phone_editTxt"
+            android:layout_width="190dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="8dp"
+            android:inputType="phone"
+            android:background="@drawable/edit_style"
+            android:layout_below="@id/client_phone_txt"/>
 
-    <EditText
-        android:id="@+id/client_mail_editTxt"
-        android:layout_width="190dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:inputType="textEmailAddress"
-        android:background="@drawable/edit_style"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.268"
-        app:layout_constraintStart_toEndOf="@+id/client_mail_txt"
-        app:layout_constraintTop_toBottomOf="@+id/client_phone_editTxt"
-        app:layout_constraintVertical_bias="0.048" />
+        <TextView
+            android:id="@+id/client_mail_txt"
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/client_mail_txt"
+            android:layout_below="@id/client_phone_editTxt"/>
 
-    <TextView
-        android:id="@+id/client_address_txt"
-        style="@style/CustomText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/client_address_txt"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/client_mail_txt"
-        app:layout_constraintVertical_bias="0.049" />
+        <EditText
+            android:id="@+id/client_mail_editTxt"
+            android:layout_width="190dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="8dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edit_style"
+            android:layout_below="@id/client_mail_txt" />
 
-    <EditText
-        android:id="@+id/client_address_editTxt"
-        android:layout_width="190dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/edit_style"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/client_address_txt"
-        app:layout_constraintTop_toBottomOf="@+id/client_mail_editTxt"
-        app:layout_constraintVertical_bias="0.04" />
+        <TextView
+            android:id="@+id/client_address_txt"
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/client_address_txt"
+            android:layout_below="@id/client_mail_editTxt" />
 
-    <Button
-        android:id="@+id/services_bttn"
-        style="@style/CustomButton"
-        android:layout_width="317dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="120dp"
-        android:background="@drawable/bttn2_style"
-        android:text="@string/client_services_bttn"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.455"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/client_address_editTxt"
-        app:layout_constraintVertical_bias="0.449" />
+        <EditText
+            android:id="@+id/client_address_editTxt"
+            android:layout_width="190dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_style"
+            android:layout_below="@id/client_address_txt"/>
+
+        <Button
+            android:id="@+id/services_bttn"
+            style="@style/CustomButton"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bttn2_style"
+            android:text="@string/client_services_bttn"
+            android:layout_below="@id/client_address_editTxt"/>
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
